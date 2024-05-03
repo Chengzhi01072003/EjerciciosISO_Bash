@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Se necesita exactamente un parámetro"
+else
+    MAXIMO=$1
+    numero_aleatorio=$((RANDOM))
+    numero_aleatorio_acotado=$(( numero_aleatorio % MAXIMO + 1 ))
+    echo "Número aleatorio entre 1 y $MAXIMO: $numero_aleatorio_acotado"
+fi
+

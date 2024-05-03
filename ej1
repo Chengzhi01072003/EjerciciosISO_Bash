@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+    echo "Hay que introducir al menos un parámetro"
+else
+    echo "Se han pasado $# parámetros"
+    echo "El primer parámetro es: $1"
+    if [ $# -ge 2 ]; then
+        echo "El segundo parámetro es: $2"
+    fi
+fi
+

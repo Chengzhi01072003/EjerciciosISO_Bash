@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+    echo "Se necesitan exactamente dos parámetros"
+else
+    suma=$(($1 + $2))
+    resta=$(($1 - $2))
+    producto=$(($1 * $2))
+    residuo=$(($1 % $2))
+
+    echo "Suma: $suma"
+    echo "Resta: $resta"
+    echo "Producto: $producto"
+    echo "Residuo de la división: $residuo"
+fi
+

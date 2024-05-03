@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Se necesita exactamente un parámetro"
+else
+    if [ -d "$1" ]; then
+        echo "El directorio $1 existe"
+    else
+        echo "El directorio $1 no existe"
+    fi
+fi
+

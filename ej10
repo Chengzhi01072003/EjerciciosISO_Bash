@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Se necesita exactamente un parámetro"
+else
+    MAXIMO=$1
+    echo $((RANDOM % MAXIMO + 1))
+fi
+
